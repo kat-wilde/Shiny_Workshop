@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Import SAS data
+
+```{r}
+airline <- read_sas("http://www.principlesofeconometrics.com/sas/airline.sas7bdat",     NULL)
+airline
+```
+
+Plotting the Results
+
+```{r}
+library(tidyverse)
+ggplot(airline) +
+ aes(x = Y, y = R, colour = YEAR) +
+ geom_point(size = 1L) +
+ scale_color_gradient() +
+ theme_minimal()
+```
+
