@@ -218,8 +218,9 @@ pre code {
 <p>Import SAS data</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYWlybGluZSA8LSByZWFkX3NhcyhcImh0dHA6Ly93d3cucHJpbmNpcGxlc29mZWNvbm9tZXRyaWNzLmNvbS9zYXMvYWlybGluZS5zYXM3YmRhdFwiLCAgICAgTlVMTClcbmFpcmxpbmVcbmBgYCJ9 -->
-<pre class="r"><code>airline &lt;- read_sas(&quot;http://www.principlesofeconometrics.com/sas/airline.sas7bdat&quot;,     NULL)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShoYXZlbilcbmFpcmxpbmUgPC0gcmVhZF9zYXMoXCJodHRwOi8vd3d3LnByaW5jaXBsZXNvZmVjb25vbWV0cmljcy5jb20vc2FzL2FpcmxpbmUuc2FzN2JkYXRcIiwgICAgIE5VTEwpXG5haXJsaW5lXG5gYGAifQ== -->
+<pre class="r"><code>library(haven)
+airline &lt;- read_sas(&quot;http://www.principlesofeconometrics.com/sas/airline.sas7bdat&quot;,     NULL)
 airline</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
@@ -242,7 +243,7 @@ ggplot(airline) +
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayAxIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpJbXBvcnQgU0FTIGRhdGEKCmBgYHtyfQphaXJsaW5lIDwtIHJlYWRfc2FzKCJodHRwOi8vd3d3LnByaW5jaXBsZXNvZmVjb25vbWV0cmljcy5jb20vc2FzL2FpcmxpbmUuc2FzN2JkYXQiLCAgICAgTlVMTCkKYWlybGluZQpgYGAKClBsb3R0aW5nIHRoZSBSZXN1bHRzCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmdncGxvdChhaXJsaW5lKSArCiBhZXMoeCA9IFksIHkgPSBSLCBjb2xvdXIgPSBZRUFSKSArCiBnZW9tX3BvaW50KHNpemUgPSAxTCkgKwogc2NhbGVfY29sb3JfZ3JhZGllbnQoKSArCiB0aGVtZV9taW5pbWFsKCkKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayAxIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpJbXBvcnQgU0FTIGRhdGEKCmBgYHtyfQpsaWJyYXJ5KGhhdmVuKQphaXJsaW5lIDwtIHJlYWRfc2FzKCJodHRwOi8vd3d3LnByaW5jaXBsZXNvZmVjb25vbWV0cmljcy5jb20vc2FzL2FpcmxpbmUuc2FzN2JkYXQiLCAgICAgTlVMTCkKYWlybGluZQpgYGAKClBsb3R0aW5nIHRoZSBSZXN1bHRzCgpgYGB7cn0KbGlicmFyeSh0aWR5dmVyc2UpCmdncGxvdChhaXJsaW5lKSArCiBhZXMoeCA9IFksIHkgPSBSLCBjb2xvdXIgPSBZRUFSKSArCiBnZW9tX3BvaW50KHNpemUgPSAxTCkgKwogc2NhbGVfY29sb3JfZ3JhZGllbnQoKSArCiB0aGVtZV9taW5pbWFsKCkKYGBgCgo=</div>
 
 
 

@@ -6,6 +6,7 @@ output: html_notebook
 Import SAS data
 
 ```{r}
+library(haven)
 airline <- read_sas("http://www.principlesofeconometrics.com/sas/airline.sas7bdat",     NULL)
 airline
 ```
